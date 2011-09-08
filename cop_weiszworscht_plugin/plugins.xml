@@ -1,0 +1,17 @@
+<library path="lib/libwwplugin">
+  <!--Descriptors -->
+  <class name="WeisswurstContainer" type="WeisswurstContainer" base_class_type="Descriptor">
+    <description>
+        Container with Weisswurst
+    </description>
+  </class>
+                  
+
+   <!--LocateAlgorithms -->
+  <class name="WWDetector" type="WWDetector"  base_class_type="LocateAlgorithm">
+    <description>
+	Detect Weisswurst
+    </description>
+  </class>
+
+</library>

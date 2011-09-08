@@ -1,0 +1,21 @@
+<package>
+  <description brief="cop_weiszworscht_plugin">
+
+     cop_weiszworscht_plugin
+
+  </description>
+  <author>Ulrich Friedrich Klank</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/cop_weiszworscht_plugin</url>
+  <depend package="cop_cad_plugins"/>
+  <depend package="cognitive_perception"/>
+  <export>
+    <cpp cflags="-I${prefix}/include/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib
+    -lwwplugin" />
+    <cognitive_perception plugin="${prefix}/plugins.xml"/>
+  </export>
+
+</package>
+
+
