@@ -1,0 +1,9 @@
+<package>
+<description>dxflib</description>
+<author>RibbonSoft, Robert J. Campbell Jr.</author>
+<license>GPL 3.0</license>
+<export>
+    <cpp cflags="-I${prefix}/dxflib/include/dxflib" lflags="-L${prefix}/dxflib/lib -ldxf"/>
+</export>
+</package>
+

@@ -1,0 +1,7 @@
+dxflib/
+dxflib-src/lib/
+dxflib-src/Makefile
+dxflib-src/config.log
+dxflib-src/config.status
+dxflib-src/test/Makefile
+confdefs.h
