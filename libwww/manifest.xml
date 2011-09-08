@@ -1,0 +1,36 @@
+<package>
+  <description>
+  libwww is a highly modular, general-purpose client side Web API written in C
+  for Unix and Windows (Win32). It's well suited for both small and large
+  applications, like browser/editors, robots, batch tools, etc. Pluggable
+  modules provided with libwww include complete HTTP/1.1 (with caching,
+  pipelining, PUT, POST, Digest Authentication, deflate, etc), MySQL logging,
+  FTP, HTML/4, XML (expat), RDF (SiRPAC), WebDAV, and much more. The purpose
+  of libwww is to serve as a testbed for protocol experiments. 
+  </description>
+  <author>
+    Henrik Frystyk Nielsen
+    Designed and implemented libwww from version 2.17 up to version 5.2.8
+    Tim Berners-Lee and Jean-Francois Groff
+     Came up with the initial design and implementation of libwww 
+  </author>
+  <license>
+      Copyright World Wide Web Consortium,
+      (Massachusetts Institute of Technology, European Research Consortium
+      for Informatics and Mathematics, Keio University). All Rights
+      Reserved. This work is distributed under the W3C c  Software License [1]
+      in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+      even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+      PARTICULAR PURPOSE.
+  
+          [1]
+          http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+          
+  </license>
+<export>
+    <cpp cflags="-I${prefix}/libwww/include/w3c-libwww"  lflags="-L${prefix}/libwww/lib -lwwwapp -lwwwcore -lwwwhtml -lwwwutils -lwwwinit -lwwwgopher  -lwwwmime -lwwwhttp -lwwwftp -lwwwfile -lmd5 -lwwwstream
+-lxmlparse -lxmltok -lpics -lwwwcache -lwwwnews -lwwwxml -lwwwdir -lwwwtrans
+    -lwwwtelnet"/>
+</export>
+</package>
+
