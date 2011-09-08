@@ -1,0 +1,10 @@
+<launch>
+  <include file="$(find ias_gscam)/gscam_960.launch" />
+ 
+  <node name="cop"
+        pkg="cognitive_perception" type="cop_srv" args="$(find cop)/resource/cop_config.ini cop"
+        launch-prefix="$(find cognitive_perception)/scripts/exec_in_dir.sh  $(find cop)/resource"
+        output="log"
+        respawn="false"
+        machine="amy"/>
+</launch>

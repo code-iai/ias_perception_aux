@@ -1,0 +1,19 @@
+<package>
+  <description brief="a package to start  cop with a defaul config">
+  </description>
+  <author>U. Klank</author>
+  <license>GPL</license>
+  <depend package="pluginlib"/>
+  <depend package="cognitive_perception"/>
+  <depend package="sensor_msgs" />  
+  <depend package="cop_sr4_plugins" />  
+  <depend package="cop_halcon_plugins" />  
+  <depend package="cop_cad_plugins" />
+  <!--depend package="cop_odu_plugin" /-->
+  <depend package="cop_transparent_objects_plugin" />
+  <depend package="cop_barcode_plugins" />
+  <depend package="ias_gscam" />
+  <depend package="jlo" />
+</package>
+
+

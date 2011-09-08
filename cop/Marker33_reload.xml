@@ -1,0 +1,19 @@
+<Signature ElemID="33">
+  <DescibingElems>
+    <CalTab CalibFileName="./caltab_3x3.descr"
+      CalThres="200"
+      Holes="10"
+      StartThres="200"
+      Steps="10"
+      MinThres="10"
+      Alpha="0.5"
+      ContLength="20"
+      Diam="100"
+    ElemID="34">
+      <Class ClassName="Marker33" ElemID="35" />
+    </CalTab>
+  </DescibingElems>
+  <Classes>
+    <Class ClassName="Marker33" ElemID="35" />
+  </Classes>
+</Signature>

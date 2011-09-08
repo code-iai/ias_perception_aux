@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find jlo)/jlo.launch" /> 
+  <node name="cop"
+        pkg="cop_collision_interface" type="cop_collision_srv" args="$(find cop)/resource/pr2config.ini cop"
+        launch-prefix="$(find cognitive_perception)/scripts/exec_in_dir.sh  $(find cop)/resource"
+        output="screen"
+        respawn="false"  />
+</launch>

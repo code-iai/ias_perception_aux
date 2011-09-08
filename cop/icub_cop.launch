@@ -1,0 +1,7 @@
+<launch>
+  <node name="cop"
+        pkg="cognitive_perception" type="cop_srv" args="$(find cop)/resource/icub2.ini cop"
+        launch-prefix="$(find cognitive_perception)/scripts/exec_in_dir.sh  $(find cop)/resource"
+        output="screen"
+        respawn="false" />
+</launch>
