@@ -12,7 +12,7 @@
   <!--depend package="cop_odu_plugin" /-->
   <depend package="cop_transparent_objects_plugin" />
   <depend package="cop_barcode_plugins" />
-  <depend package="ias_gscam" />
+  <!--depend package="ias_gscam" /-->
   <depend package="jlo" />
 </package>
 
