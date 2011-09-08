@@ -1,0 +1,18 @@
+<package>
+  <description brief="a package that provid transparent object detection to cop">
+  </description>
+  <author>U. Klank</author>
+  <license>GPL</license>
+  <depend package="pluginlib"/>
+  <depend package="cognitive_perception"/>
+  <depend package="cop_halcon_plugins" />
+  <depend package="pcl" />  
+  <export>
+    <cpp cflags="-I${prefix}/include/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib
+  -lTransparentObjects"/>
+    <cognitive_perception plugin="${prefix}/plugins.xml"/>
+  </export>
+
+</package>
+
+

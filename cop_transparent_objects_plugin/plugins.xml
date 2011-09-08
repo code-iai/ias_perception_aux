@@ -1,0 +1,28 @@
+<library path="lib/libTransparentObjects">
+  <!--Descriptors --> 
+  <class name="TransparentObjectCandidate" type="TransparentObjectCandidate" base_class_type="Descriptor">
+    <description>
+      Transparent Object Candidate
+    </description>
+  </class>
+  <class name="TransparentObject" type="TransparentObject" base_class_type="Descriptor">
+    <description>
+      Transparent Object
+    </description>
+  </class>
+  <!--LocateAlgorithms -->
+  <class name="DetectTransparentObjectCandidate"
+  type="DetectTransparentObjectCandidate"  base_class_type="LocateAlgorithm">
+    <description>
+      This is a plugin containing a LocateAlgoroithm
+    </description>
+  </class>
+  <!--RefineAlgorithms -->
+  <class name="DetectTransparentObject" type="DetectTransparentObject"
+  base_class_type="RefineAlgorithm">
+    <description>
+      This is a plugin containing a RefineAlgorithm 
+    </description>
+  </class>
+                  
+</library>
