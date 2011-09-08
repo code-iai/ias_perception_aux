@@ -1,0 +1,9 @@
+<stack>
+  <description brief="ias_perception_aux">ias_perception_aux</description>
+  <author>Maintained by Ulrich Friedrich Klank</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ias_perception_aux</url>
+  <depend stack="ros" />
+
+</stack>
