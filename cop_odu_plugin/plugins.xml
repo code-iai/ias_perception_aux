@@ -1,0 +1,15 @@
+<library path="lib/libcop_odu_plugin">
+  <class name="CopOduRefine" type="cop::CopOduRefine"
+    base_class_type="RefineAlgorithm">
+    <description>
+       Looks up an object type in Databases (of sift features)
+    </description>
+  </class>
+  <class name="ObjectOfDailyUseDescriptor" type="cop::ObjectOfDailyUseDescriptor"
+    base_class_type="Descriptor">
+    <description>
+       object type from a  Databases (of sift features)
+    </description>
+  </class>
+
+</library>

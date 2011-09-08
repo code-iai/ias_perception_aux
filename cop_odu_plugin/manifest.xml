@@ -1,0 +1,25 @@
+<package>
+  <description brief="cop_odu_plugin">
+
+     cop_odu_plugin
+
+  </description>
+  <author>Ulrich Friedrich Klank</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/cop_odu_plugin</url>
+
+  <depend package="pluginlib"/>
+  <depend package="cognitive_perception"/>
+  <depend package="cop_ros_plugins"/>
+  <depend package="objects_of_daily_use_finder" />
+
+  <export>
+      <cpp cflags="-I${prefix}/include/" lflags="-Wl,-rpath,${prefix}/lib  -L${prefix}/lib -lcop_odu_plugins" />
+      <cognitive_perception     plugin="${prefix}/plugins.xml"/>
+   </export>
+
+
+</package>
+
+
