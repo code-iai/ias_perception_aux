@@ -60,8 +60,8 @@ ROSBUILD_ADD_LIBRARY(VisionPlugins
 ./src/TwoInOneAlg.cpp
 ./src/IntersectTwoRuns.cpp
 ./src/File.cpp
-./src/ClassifyObject.cpp
-./src/RFAClassByDPs.cpp
+#./src/ClassifyObject.cpp
+#./src/RFAClassByDPs.cpp
 ./src/StereoSensor.cpp
 ./src/RelPoseHTuple.cpp
 ./src/PanCakeDetector.cpp

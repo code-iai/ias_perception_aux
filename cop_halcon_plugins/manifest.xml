@@ -11,7 +11,7 @@
   <depend package="cop_ros_plugins" />  
   <depend package="opencv2" />  
   <depend package="cv_bridge" />
-  <depend package="descr_class" />
+  <!--depend package="descr_class" /-->
   <!--depend package="camera_self_filter_lib" /-->
   <export>
     <cpp cflags="-I${prefix}/include/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib
