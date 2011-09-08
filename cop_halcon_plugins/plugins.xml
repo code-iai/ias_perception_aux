@@ -1,0 +1,167 @@
+<library path="lib/libVisionPlugins">
+  <!--Sensors -->
+  <class name="CameraDriver" type="CameraDriver" base_class_type="Sensor">
+    <description>
+      This is a plugin to make the halcon framegrabbers available in cop.
+    </description>
+  </class>
+
+   <class name="CameraDriverRelay" type="CameraDriverRelay" base_class_type="Sensor">
+    <description>
+      This is a plugin to make the halcon framegrabbers available over network, too.
+    </description>
+  </class>
+
+  <class name="SimulatedCamera" type="SimulatedCamera" base_class_type="Sensor">
+    <description>
+      This is a plugin to make the halcon read_image  available in cop.
+    </description>
+  </class>
+
+  <class name="ROSCOPCamera" type="ROSCOPCamera" base_class_type="Sensor">
+    <description>
+      This is a plugin to make a ros camera available in cop.
+    </description>
+  </class>
+
+  <class name="StereoSensor" type="StereoSensor" base_class_type="Sensor">
+    <description>
+      This is a plugin to combine to Cameras to a 3D sensor.
+    </description>
+  </class>
+
+  <!--Readings -->
+  <class name="ImageFile" type="Image" base_class_type="Reading">
+    <description>
+      This is a plugin reads an image file
+    </description>
+  </class>
+
+  <!--Descriptors -->
+  <class name="NamedClass" type="NamedClass" base_class_type="Descriptor">
+    <description>
+      Shape Model
+    </description>
+  </class>
+
+  <class name="DeformShapeModel" type="DeformShapeModel" base_class_type="Descriptor">
+    <description>
+     DeformShapeModel
+    </description>
+  </class>
+  <class name="CalTab" type="CalTab" base_class_type="Descriptor">
+    <description>
+      CalTab.
+    </description>
+  </class>
+  <class name="ColorClass" type="ColorClass" base_class_type="Descriptor">
+    <description>
+      ColorClass
+    </description>
+  </class>
+  <class name="Blob" type="Blob" base_class_type="Descriptor">
+    <description>
+      Blob
+    </description>
+  </class>
+  <class name="CircleDescriptor" type="CircleDescriptor" base_class_type="Descriptor">
+    <description>
+      Blob
+    </description>
+  </class>
+  <class name="PanCakeMaker" type="PanCakeMaker" base_class_type="Descriptor">
+    <description>
+      Pan Cake Maker deform shape model
+    </description>
+  </class>
+  <class name="SupportingPlaneDescriptor" type="SupportingPlaneDescriptor" base_class_type="Descriptor">
+    <description>
+      Blob
+    </description>
+  </class>
+
+   <!--LocateAlgorithms -->
+  <class name="CheckColorClass" type="CheckColorClass"  base_class_type="LocateAlgorithm">
+    <description>
+      This is a plugin containing an LocateAlgoroithm
+    </description>
+  </class>
+  <class name="DeformShapeBased"  type="DeformShapeBased"  base_class_type="LocateAlgorithm">
+    <description>
+      This is a plugin containing an LocateAlgoroithm
+    </description>
+  </class>
+  <class name="DeformShapeBasedAlg" type="DeformShapeBased"  base_class_type="LocateAlgorithm">
+    <description>
+      This is a plugin containing an LocateAlgoroithm
+    </description>
+  </class>
+
+  <class name="FindCalTab" type="FindCalTab"  base_class_type="LocateAlgorithm">
+    <description>
+      This is a plugin containing an LocateAlgoroithm
+    </description>
+  </class>
+  <class name="BlobLocalizer" type="BlobLocalizer"  base_class_type="LocateAlgorithm">
+    <description>
+      BlobLocalizer
+    </description>
+  </class>
+  <class name="TwoInOneAlg" type="TwoInOneAlg"  base_class_type="LocateAlgorithm">
+    <description>
+      BlobLocalizer
+    </description>
+  </class>
+  <class name="SupportingPlaneDetector" type="SupportingPlaneDetector"  base_class_type="LocateAlgorithm">
+    <description>
+      For debugging, todo implement swissranger based version
+    </description>
+  </class>
+  <class name="SimulatedLocate" type="SimulatedLocate"  base_class_type="LocateAlgorithm">
+    <description>
+      For  debugging
+    </description>
+  </class>
+  <class name="IntersectTwoRuns" type="IntersectTwoRuns"  base_class_type="LocateAlgorithm">
+    <description>
+      Takes two different sensors and verifies the results from one algorithm applied on both sensors
+    </description>
+  </class>
+  <class name="HClusterDetector" type="HClusterDetector"  base_class_type="LocateAlgorithm">
+    <description>
+      Takes two different sensors and verifies the results from one algorithm applied on both sensors
+    </description>
+  </class>
+  <class name="PanCakeDetector" type="PanCakeDetector"  base_class_type="LocateAlgorithm">
+    <description>
+	Detect Pan Cakes
+    </description>
+  </class>
+  <class name="DetectPlate" type="DetectPlate"  base_class_type="LocateAlgorithm">
+    <description>
+	Detect Pan Cakes
+    </description>
+  </class>
+
+  <!-- Refine Algorithms -->
+  <class name="RFAClassByDPs" type="RFAClassByDPs"
+               base_class_type="RefineAlgorithm">
+      <description>
+            object classification
+      </description>
+   </class>
+  <class name="RFADeformByCluster" type="RFADeformByCluster"
+               base_class_type="RefineAlgorithm">
+      <description>
+            Learns a deformable shape model (texture-edges) from a cluster
+      </description>
+   </class>
+
+  <!--class name="ShapeModelDownloader" type="ShapeModelDownloader"
+               base_class_type="RefineAlgorithm">
+      <description>
+            Loads new CAD models from the webfor a certain class string
+      </description>
+   </class-->
+
+</library>
