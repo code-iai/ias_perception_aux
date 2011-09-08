@@ -1,0 +1,63 @@
+<library path="lib/libCADPlugins">
+  <!--Sensors -->
+
+  <!--Readings -->
+
+  <!--Descriptors -->
+  <class name="ShapeModel" type="ShapeModel" base_class_type="Descriptor">
+    <description>
+      Shape Model
+    </description>
+  </class>
+  <class name="SurfaceModel" type="SurfaceModel" base_class_type="Descriptor">
+    <description>
+      Surface Model  (B. Drost)
+    </description>
+  </class>
+
+   <!--LocateAlgorithms -->
+  <class name="ShapeBased3DAlg" type="ShapeBased3D"  base_class_type="LocateAlgorithm">
+    <description>
+      This is a plugin containing an LocateAlgoroithm
+    </description>
+  </class>
+  <class name="SurfaceDetection" type="SurfaceDetection"  base_class_type="LocateAlgorithm">
+    <description>
+	Detect Pan Cakes
+    </description>
+  </class>
+
+  <!-- Refine Algorithms -->
+
+  <class name="RFAColorByShape" type="RFAColorByShape"
+               base_class_type="RefineAlgorithm">
+      <description>
+            Learns which color class a cluster has as most probable color
+      </description>
+   </class>
+  <class name="RFASurfaceByShape" type="RFASurfaceByShape"
+               base_class_type="RefineAlgorithm">
+      <description>
+            Creates a surface model for an existing CAD model
+      </description>
+   </class>
+  <class name="RFASurfaceByCov" type="RFASurfaceByCov"
+               base_class_type="RefineAlgorithm">
+      <description>
+            Creates a surface model if only a jlo is given
+      </description>
+   </class>
+  <class name="SurfaceModelExtraction" type="SurfaceModelExtraction"
+               base_class_type="RefineAlgorithm">
+      <description>
+            Creates a surface model if  a segment prototype is given
+      </description>
+   </class>
+  <!--class name="ShapeModelDownloader" type="ShapeModelDownloader"
+               base_class_type="RefineAlgorithm">
+      <description>
+            Loads new CAD models from the webfor a certain class string
+      </description>
+   </class-->
+
+</library>
