@@ -1,0 +1,16 @@
+<library path="lib/libBarcodePlugins">
+  <!--Descriptors -->
+  <class name="BarCode" type="cop::BarCode" base_class_type="Descriptor">
+    <description>
+      Barcode of type EAN 13 / 8
+    </description>
+  </class>
+  <!--LocateAlgorithm -->
+  <class name="FindBarCode" type="cop::FindBarCode"
+  base_class_type="AttentionAlgorithm">
+    <description>
+      This is a plugin containing an LocateAlgorithm to detect barcodes
+    </description>
+  </class>
+
+</library>
