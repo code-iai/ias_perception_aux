@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <config>
+    <VisualFinder>
+      <std_vector>
+          <AlgorithmEval>
+              <HClusterDetector ptu_loid="/base_link"
+                       sr_loid="/sr4" FileName="../cop/resource/sr4_calib.dat"
+                        table_noise="0.02" />
+             <AlgType>123</AlgType>
+             <Eval>0.010000</Eval>
+             <AvgTime>0.000000</AvgTime>
+         </AlgorithmEval>
+      </std_vector>
+    </VisualFinder>
+    <VisLearner>
+      <Statistics />
+      <RefineAlgs>
+       <AlgorithmEval>
+          <PVWObjectClassification svmpath="./classifier.bin"
+                         descrpath="where"
+                         namefilepath="where"
+            />
+          <AlgType>256</AlgType>
+         <Eval>0.990000</Eval>
+         <AvgTime>0.000000</AvgTime>
+       </AlgorithmEval>
+      </RefineAlgs>
+      <ProveAlgs />
+    </VisLearner>
+    <ImageInputSystem>
+      <std_vector>
+        <ROSCOPCamera TopicName="/cop/rightcamera" SensorName="'RightCam"
+        CalibFileName="../cop/resource/right_stereo_color_calib_next.dat" CamColor="0" >
+                  <RelPose loid="/RightEyeCalc" />
+         </ROSCOPCamera>
+        <SwissRangerRemoteSensor Topic="/swissranger_test/cloud_sr">
+          <RelPose loid="/sr4" />
+        </SwissRangerRemoteSensor>
+      </std_vector>
+    </ImageInputSystem>
+    <SignatureDB>
+      <SigDBRoot>
+        <Signature ElemID="1">
+          <DescibingElems>
+            <TableObjectDescriptor FileName="" ElemID="2">
+              <Class ClassName="DefaultTableObject" ElemID="3" />
+            </TableObjectDescriptor>
+          </DescibingElems>
+          <Classes>
+            <Class ClassName="DefaultTableObject" ElemID="3" />
+          </Classes>
+        </Signature>
+        <Signature ElemID="1044">
+          <DescibingElems>
+            <PVWObject DescriptorQuality="1.000000"
+                       ElemID="1045">
+                <Class ClassName="Object" ElemID="1046" />
+            </PVWObject>
+          </DescibingElems>
+          <Classes>
+          <Class ClassName="Object"
+                 ElemID="1046"
+                />
+          </Classes>
+        </Signature>
+        <Signature ElemID="805">
+           <DescibingElems> 
+             <SegmentPrototype RelFrame="/base_link"
+                CovX="0.2" CovY="0.2" CovZ="0.8" ElemID="806">
+                 <Class ClassName="Cluster"
+                          ElemID="807" />  
+             </SegmentPrototype>
+            </DescibingElems>
+            <Classes>
+             <Class
+               ClassName="Cluster"
+              ElemID="807"
+             />
+           </Classes>
+         </Signature>
+      </SigDBRoot>
+      <SigDBIndex>
+        <SigDBIndexClass2ID>
+        </SigDBIndexClass2ID>
+      </SigDBIndex>
+    </SignatureDB>
+    <AttentionManager>
+      <Attendants>
+      </Attendants>
+    </AttentionManager>
+  </config>

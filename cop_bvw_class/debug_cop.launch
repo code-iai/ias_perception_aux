@@ -1,0 +1,7 @@
+<launch>
+  <node name="debug_cop"
+       pkg="cognitive_perception" type="cop_srv" args="$(find cop_bvw_class)/cop_test_bvw.xml debug_cop"
+        launch-prefix="$(find cognitive_perception)/scripts/exec_in_dir.sh  $(find cop_bvw_class)/"
+        output="screen"
+        respawn="false" />
+</launch>

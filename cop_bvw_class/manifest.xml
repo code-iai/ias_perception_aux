@@ -1,0 +1,27 @@
+<package>
+  <description brief="a package that allows classification based on a bag of
+  visual word approach">
+  A package that allows classification based on a bag of
+  visual word approach
+  </description>
+  <author>U. Klank</author>
+  <license>GPL</license>
+  <depend package="pluginlib"/>
+  <depend package="cognitive_perception"/>
+  <depend package="cop_halcon_plugins" />
+  <export>
+    <cpp cflags="-I${prefix}/include/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib
+    -lbvw"/>
+    <cognitive_perception plugin="${prefix}/plugins.xml"/>
+    <python
+    path="${prefix}/Recognosco/build/lib/python2.6/dist-packages:${prefix}/Recognosco/build/lib/python2.6/dist-packages/mpi_kmeans:/usr/lib/python2.5/site-packages/orange"/>
+  </export>
+  <rosdep name="python-sqlalchemy"/>
+  <rosdep name="numpy"/>
+  <rosdep name="python-orange-svn"/>
+  <rosdep name="python-beautifulsoup" />
+  <!--rosdep name=""/-->
+      
+</package>
+
+

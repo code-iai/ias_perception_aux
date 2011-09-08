@@ -1,0 +1,22 @@
+<library path="lib/libbvw">
+  <class name="PVWObject" type="cop::PVWObject"
+    base_class_type="Descriptor">
+    <description>
+    </description>
+  </class>
+  <class name="PVWObjectClassification" type="cop::PVWObjectClassification"
+    base_class_type="RefineAlgorithm">
+    <description>
+    </description>
+  </class>
+  <class name="PVWNewTrainingData" type="cop::PVWNewTrainingData"
+    base_class_type="RefineAlgorithm">
+    <description>
+    </description>
+  </class>
+  <class name="PVWObjectDetection" type="cop::PVWObjectDetection"
+    base_class_type="LocateAlgorithm">
+    <description>
+    </description>
+  </class>
+</library>
