@@ -1,0 +1,31 @@
+<library path="lib/libToolPlugins">
+  <!--Descriptors -->
+  <class name="Line3D" type="cop::Line3D" base_class_type="Descriptor">
+    <description>
+      A line in 3D space, describing an unknown object (e.g. a tool) geometrically
+    </description>
+  </class>
+  <class name="Plane3D" type="cop::Plane3D" base_class_type="Descriptor">
+    <description>
+      A plane in 3D space, describing an unknown object (e.g. a tool) geometrically
+    </description>
+  </class>
+  <class name="Concavity" type="cop::Concavity" base_class_type="Descriptor">
+    <description>
+      A plane in 3D space, describing an unknown object (e.g. a tool) geometrically
+    </description>
+  </class>  <!--LocateAlgorithm -->
+  <class name="FindLines" type="cop::FindLines"
+  base_class_type="LocateAlgorithm">
+    <description>
+      This is a plugin containing an LocateAlgorithm to detect Line3D
+    </description>
+  </class>
+  <class name="FindPlanes" type="cop::FindPlanes"
+  base_class_type="LocateAlgorithm">
+    <description>
+      This is a plugin containing an LocateAlgorithm to detect Plane3D
+    </description>
+  </class>
+
+</library>

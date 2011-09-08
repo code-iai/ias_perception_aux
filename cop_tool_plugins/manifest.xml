@@ -1,0 +1,17 @@
+<package>
+  <description brief="a package that provide basic functionality to cop">
+  </description>
+  <author>U. Klank</author>
+  <license>GPL</license>
+  <depend package="pluginlib"/>
+  <depend package="cognitive_perception"/>
+  <depend package="cop_halcon_plugins" />  
+  <export>
+    <cpp cflags="-I${prefix}/include/" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib
+    -lToolPlugins" />
+    <cognitive_perception plugin="${prefix}/plugins.xml"/>
+  </export>
+
+</package>
+
+
