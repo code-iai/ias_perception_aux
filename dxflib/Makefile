@@ -8,3 +8,5 @@ all: dxflib-src/Makefile
 dxflib-src/Makefile:
 	cd $(BUILD_DIR) && ./configure --prefix=$(DXF_PREFIX)
 
+clean:
+	cd $(BUILD_DIR) && make clean
