@@ -4,4 +4,6 @@ dxflib-src/Makefile
 dxflib-src/config.log
 dxflib-src/config.status
 dxflib-src/test/Makefile
+dxflib-src/src/dl_dxf.o
+dxflib-src/src/dl_writer_ascii.o
 confdefs.h
