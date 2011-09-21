@@ -16,7 +16,7 @@ installed:
 build_recog:
 	mkdir -p Recognosco/build
 	cd Recognosco/build && cmake .. $(CMAKE_BINDINGS_ARGS) && make && make install
-	
+
 clean:
-	rm -rf Recognosco
-	installed	
+	rm -f installed Recognosco
+
