@@ -12,10 +12,10 @@
           http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231</license>  
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/ias_perception_aux</url>
-  <depend stack="common" /> <!-- pluginlib -->
   <depend stack="common_msgs" /> <!-- sensor_msgs -->
-  <depend stack="ias-perception" /> <!-- jlo, cop_sr4_plugins, cop_ros_plugins, cognitive_perception -->
-  <depend stack="point_cloud_perception" /> <!-- pcl -->
+  <depend stack="ias_perception" /> <!-- jlo, cop_sr4_plugins, cop_ros_plugins, cognitive_perception -->
+  <depend stack="perception_pcl" /> <!-- pcl -->
+  <depend stack="pluginlib" /> <!-- pluginlib -->
   <depend stack="ros" />
   <depend stack="vision_opencv" /> <!-- opencv2, cv_bridge -->
 
