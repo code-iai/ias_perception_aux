@@ -1,7 +1,7 @@
 TIME = 26042011
 
 
-cop_config: all_ver$(TIME)
+cop_config: all_ver$(TIME) cop_config.ini pr2config.ini
 	cp pr2config.ini ./resource
 	cp cop_config.ini ./resource
 	touch cop_config
